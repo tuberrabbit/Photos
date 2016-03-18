@@ -3,7 +3,7 @@ var photosApp = angular.module('photosApp', [
 ]);
 
 photosApp.config(['$routeProvider', function ($routeProvider) {
-  $routeProvider.when('/test', {
+  $routeProvider.when('/', {
     templateUrl: './pages/test-photo.html',
     controller: 'testPhotoController',
     controllerAs: 'vm'
