@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3C65F1;
+  .nav-bar {
+    margin-right: auto;
+    padding: 5px 0;
+    .nav-pills .nav-link.active {
+      background-color: #3559D0;
+    }
+  }
+  .logo {
+    width: 150px;
+    line-height: 50px;
+    font-size: 22px;
+    height: 50px;
+  }
+}

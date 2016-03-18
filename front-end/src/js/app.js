@@ -4,8 +4,8 @@ var photosApp = angular.module('photosApp', [
 
 photosApp.config(['$routeProvider', function ($routeProvider) {
   $routeProvider.when('/', {
-    templateUrl: './pages/test-photo.html',
-    controller: 'testPhotoController',
+    templateUrl: './pages/photo-wall.html',
+    controller: 'photoWallController',
     controllerAs: 'vm'
   }).otherwise({
     templateUrl: './error.html'
