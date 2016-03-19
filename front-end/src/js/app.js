@@ -7,6 +7,10 @@ photosApp.config(['$routeProvider', function ($routeProvider) {
     templateUrl: './pages/photo-wall.html',
     controller: 'photoWallController',
     controllerAs: 'vm'
+  }).when('/view/:id', {
+    templateUrl: './pages/photo-view.html',
+    controller: 'photoViewController',
+    controllerAs: 'vm',
   }).otherwise({
     templateUrl: './error.html'
   });
