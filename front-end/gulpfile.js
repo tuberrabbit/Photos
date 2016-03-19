@@ -33,7 +33,7 @@ gulp.task('serve', function () {
     }
   });
   gulp.watch('src/sass/**/*.scss', ['sass']);
-  gulp.watch('src/**', ['copy']).on('change', serve.reload);
+  gulp.watch('src/**/*.*', ['copy']).on('change', serve.reload);
 });
 
 gulp.task('default', ['build']);

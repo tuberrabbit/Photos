@@ -1,3 +1,3 @@
-photosApp.controller('photoWallController', [function () {
+photosApp.controller('photoWallController', function () {
   this.testResult = 'success';
-}]);
+});
