@@ -27,4 +27,15 @@ photosApp.service('photoService', function ($http, $q) {
     });
     return defer.promise;
   };
+
+  this.getPhotoById = function (id) {
+    var defer = $q.defer();
+    defer.resolve({
+      data: {
+        src: './images/' + id + '.jpeg',
+        alt: id
+      }
+    });
+    return defer.promise;
+  };
 });
