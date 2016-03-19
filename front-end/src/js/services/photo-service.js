@@ -3,25 +3,25 @@ photosApp.service('photoService', function ($http, $q) {
     var defer = $q.defer();
     defer.resolve({
       data: [{
-        src: '',
+        src: './images/img1.jpeg',
         alt: '图片1'
       },{
-        src: '',
+        src: './images/img2.jpeg',
         alt: '图片2'
       },{
-        src: '',
+        src: './images/img3.jpeg',
         alt: '图片3'
       },{
-        src: '',
+        src: './images/img4.jpeg',
         alt: '图片4'
       },{
-        src: '',
+        src: './images/img5.jpeg',
         alt: '图片5'
       },{
-        src: '',
+        src: './images/img6.jpeg',
         alt: '图片6'
       },{
-        src: '',
+        src: './images/img7.jpeg',
         alt: '图片7'
       }]
     });
