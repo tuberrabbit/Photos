@@ -2,8 +2,6 @@
 *.ipr
 *.iws
 .gradle
-detail.png
-list.png
 NewShow.pdf
 **/node_modules
 **/bower_components
