@@ -1,7 +1,12 @@
 .image-list {
-  .image-item {
+  .image-item--thumbnail {
     width: 200px;
     height: 200px;
+    margin: 10px;
+  }
+  .image-item--detail{
+    width: 30px;
+    height: 30px;
     margin: 10px;
   }
 }

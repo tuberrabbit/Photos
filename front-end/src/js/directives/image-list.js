@@ -6,6 +6,9 @@ photosApp.directive('imageList', function (photoService) {
       photoService.getPhotos()
         .then(function (res) {
           scope.imageList = res.data;
+          scope.imageList.forEach(function (image) {
+            image.file = image.src.split('/').pop();
+          });
         });
     }
   };
