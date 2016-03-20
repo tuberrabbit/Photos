@@ -1,9 +1,9 @@
 <div class="image-list">
-  <a ng-if="false" ng-repeat="image in imageList" href="#/view/{{image.alt}}">
+  <a ng-if="vm.mode==='thumbnail'" ng-repeat="image in imageList" href="#/view/{{image.alt}}">
     <img src="{{image.src}}" alt="{{image.alt}}" class="image-item--thumbnail">
   </a>
-  <a ng-if="true" ng-repeat="image in imageList" href="#/view/{{image.alt}}">
-    <div>
+  <a ng-if="vm.mode==='list'" ng-repeat="image in imageList" href="#/view/{{image.alt}}">
+    <div class="detail-list">
       <img src="{{image.src}}" alt="{{image.alt}}" class="image-item--detail">
       <span>{{image.file}}</span>
     </div>
